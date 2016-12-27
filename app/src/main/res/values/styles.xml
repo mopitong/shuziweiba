@@ -1,0 +1,43 @@
+<resources>
+
+  <!--  &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_700</item>
+        <item name="colorAccent">@color/material_green_A200</item>
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+        <item name="overlapAnchor">false</item>
+
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+       <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+
+    </style>
+
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/material_blue_500</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+
+</resources>

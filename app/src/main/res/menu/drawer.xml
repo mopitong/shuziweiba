@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group>
+        <item
+            android:id="@+id/item_one"
+            android:icon="@mipmap/ic_launcher"
+            android:checkable="true"
+            android:title="我的动态"></item>
+        <item
+            android:id="@+id/item_two"
+            android:icon="@mipmap/ic_launcher"
+            android:checkable="true"
+            android:title="我的留言"></item>
+        <item
+            android:id="@+id/item_three"
+            android:icon="@mipmap/ic_launcher"
+            android:checkable="true"
+            android:title="附近的人"></item>
+    </group>
+
+    <item android:title="更多">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_launcher"
+                android:checkable="true"
+                android:title="夜间模式"/>
+            <item
+                android:id="@+id/setting"
+                android:icon="@mipmap/ic_launcher"
+                android:checkable="true"
+                android:title="设置"/>
+        </menu>
+    </item>
+
+</menu>

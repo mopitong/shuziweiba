@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_gridview"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></android.support.v4.view.ViewPager>
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:piv_selectedColor="@color/material_blue_700"
+        app:piv_unselectedColor="#999999"
+        app:piv_radius="4dp"
+        app:piv_animationType="slide"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rel_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+</LinearLayout>

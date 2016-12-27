@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MptDemo</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="dont_ask_again">不再询问</string>
+
+</resources>
