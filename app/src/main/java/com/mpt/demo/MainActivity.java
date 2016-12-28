@@ -30,6 +30,8 @@ import com.mpt.demo.fragment.MusicFragment;
 import com.mpt.demo.fragment.TvFragment;
 import com.mpt.demo.utils.UIHelper;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -130,7 +132,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.setting:
-//                        showToast("设置");
+
 
                         UIHelper.showSettingActivity(MainActivity.this);
 

@@ -24,6 +24,7 @@ import com.mpt.demo.base.BaseFragmemt;
 import com.mpt.demo.model.HorizontalCardViewModel;
 import com.mpt.demo.utils.DividerItemDecoration;
 import com.mpt.demo.utils.GlideImageLoader;
+import com.mpt.demo.utils.UIHelper;
 import com.orhanobut.logger.Logger;
 import com.rd.PageIndicatorView;
 import com.youth.banner.Banner;
@@ -37,6 +38,7 @@ import butterknife.ButterKnife;
 
 import static android.R.attr.data;
 import static android.R.attr.tabStripLeft;
+import static android.R.attr.value;
 
 /**
  * Created by mpt on 2016/12/20.
@@ -58,7 +60,7 @@ public class TvFragment extends BaseFragmemt {
     private LayoutInflater inflater;
     private List<View> mPagerList;
 
-    private String[] titles = {"美食", "电影", "酒店住宿", "休闲娱乐", "外卖", "自助餐"};
+    private String[] titles = {"公交查询", "快递查询", "酒店住宿", "休闲娱乐", "外卖", "自助餐"};
     /**
      * 总的页数
      */
@@ -114,7 +116,21 @@ public class TvFragment extends BaseFragmemt {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     int pos = position + curIndex * pageSize;
-                    showToast(titles[pos]);
+                    switch (pos){
+                        case 0:
+                            UIHelper.showBusSearchActivity(getActivity());
+                       break;
+                        case 1:
+                            UIHelper.showKuaidiActivity(getActivity());
+                            break;
+
+                       default:
+                       break;
+                    }
+
+
+
+
                 }
             });
         }

@@ -4,9 +4,11 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.mpt.demo.R;
+import com.mpt.demo.utils.EventUtil;
 
 import static com.orhanobut.logger.Logger.init;
 
@@ -26,6 +28,7 @@ public class BaseActivity extends AppCompatActivity{
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         mContext = BaseActivity.this;
 
+
     }
 
 
@@ -40,4 +43,17 @@ public class BaseActivity extends AppCompatActivity{
         super.finish();
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
+
+    //返回键
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+
+
 }

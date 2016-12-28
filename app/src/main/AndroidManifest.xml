@@ -32,6 +32,16 @@
         <activity android:name=".activity.PersonalActivity"
             >
         </activity>
+
+        <activity android:name=".activity.BusSearchActivity"
+            >
+        </activity>
+        <activity android:name=".activity.KuaidiSearchActivity"
+            >
+        </activity>
+        <activity android:name=".activity.KuaidiDetailActivity"
+            >
+        </activity>
     </application>
 
 </manifest>
