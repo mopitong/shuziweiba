@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_behavior="@string/bye_burger_title_behavior"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/ed_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:met_floatingLabel="highlight"
+        android:hint="快递单号"/>
+
+
+
+    <com.mpt.demo.ui.StateButton
+        android:id="@+id/bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:button_radius="5dp"
+        android:text="查询"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        app:animationDuration="200"
+        app:normalBackgroundColor="@color/colorPrimaryDark"
+        app:pressedBackgroundColor="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/tv_kuaidi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+
+
+
+</LinearLayout>
